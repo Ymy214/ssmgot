@@ -1,0 +1,12 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open PersonalCenter.html",
+            "file": "e:\\Web前端学习\\慕课网\\PersonalCenter.html"
+        }
+    ]
+}

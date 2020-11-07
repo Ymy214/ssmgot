@@ -1,0 +1,259 @@
+.top{
+    border-top: 5px solid black ;
+    height: 70px;
+    clear: both;
+    align-items: center;
+    padding:20px 30px 20px 30px;
+    box-sizing: border-box;
+}
+.top a{
+    text-decoration: none;
+}
+.top-left{
+    margin-top:8px ;
+    display: flex;
+    position: relative;
+}
+.top-left .back{
+    font-size: 35px;
+    color: #beb9ae;
+    position: absolute;
+    top: -13px;
+    left: 0;
+    /* 鼠标变成小手 */
+    cursor:pointer;
+}
+.top-left p{
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.top-left i{
+    color:darkgrey;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.top-right input{
+    width: 360px;
+    height: 30px;
+    border: none;
+    background: #eeeeee;
+    border-radius: 5px;
+    padding: 0 15px;
+    outline: none;
+    margin-right: 40px;
+}
+.top-right .icon-sousuo{
+    position: absolute;
+    right:200px;
+    top: 33px;
+    font-weight: bold;
+    color: #aaa;
+}
+.top-right a{
+    color:darkgrey;
+   padding-right: 15px;
+}
+/*主体*/
+.main{
+    height: 800px;
+    background-color:rgba(0,0,0,0.8);
+    display: flex;
+}
+/*主体左侧*/
+.main-left{
+    width: 80px;
+    height: 60%;
+    /*border: 1px solid white;*/
+    margin: auto 0;
+    display: flex;
+/*    设置主轴方向和主轴的起点
+*  row; //（默认值）主轴为水平方向，起点在左侧
+*  row-reverse ;//主轴为水平方向，起点在右侧
+*  column;//主轴为垂直方向，起点在顶部
+*  column-reverse;//主轴为垂直方向，起点在底部*/
+    flex-direction: column;
+}
+.main-left-item{
+    height: calc(100%/4);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+/*主体中间*/
+.main-vedio{
+    flex: 1;
+    margin: 20px 0 0;
+    background-color: black;
+    box-sizing: border-box;
+    /*height: 90%;*/
+}
+.main-vedio-play{
+    height: 100%;
+    width: 100%;
+}
+/*主体右侧*/
+.main-right{
+    width: 20%;
+    box-sizing: border-box;
+    padding:0 20px;
+}
+.teacher_introduction{
+    margin: 30px 0;
+    display: flex;
+}
+.teacher_introduction .teacher_img{
+    border-radius: 30px;
+}
+.teacher_introduction .teacher{
+    width: 150px;
+    margin: 10px 20px 10px 20px;
+}
+.teacher_introduction .teacher a{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    color:rgba(255,255,255,1);
+}
+.teacher_introduction .teacher img{
+    background-color: white;
+    border-radius: 10px;
+}
+.teacher_introduction .teacher p{
+    color:rgba(255,255,255,0.7);
+}
+.t_introduction p{
+    color:rgba(255,255,255,0.7);
+    line-height: 25px;
+}
+.main-right-img{
+    margin-top: 25px;
+    border-radius: 10px;
+}
+/*下半部分*/
+.lower-half{
+    display: flex;
+    /*height: 500px;*/
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*下半部分左侧*/
+.lower-half-left{
+    width: 60%;
+    margin-left: 100px;
+    border-top: 2px solid #dddddd;
+}
+.lower-half-left .title{
+    height: 30px;
+    padding: 15px ;
+}
+.lower-half-left .title a{
+    margin-right: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(255,23,23,0.63);
+    font-weight: bold;
+}
+.lower-half-left .title a:hover{
+    color: rgba(255,23,23,0.9);
+}
+.question-answer{
+    height: 130px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    position: relative;
+    margin-left: 50px;
+}
+.question-answer-img{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+.question{
+    padding: 15px 15px 15px 60px;
+    display: flex;
+}
+.question img{
+    border-radius: 30px;
+}
+.question-title{
+    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+.question .new-answer{
+    font-size: 14px;
+    margin-top: 15px;
+    border-left: 3px solid #dddddd;
+    padding-left: 30px;
+    color: rgba(0,0,0,0.67);
+}
+.question .new-answer a{
+    text-decoration: none;
+    color:rgba(0,0,0,0.67);
+}
+.new-question-answer{
+    margin-left: 30px;
+}
+.num {
+    margin-left: 128px;
+}
+.num span{
+    color: #93999F;
+    display: inline-block;
+    margin: 10px 40px 0 20px;
+    font-size: 11px;
+}
+/*下半部分右侧*/
+.lower-half-right{
+    width: 20%;
+    border-top: 2px solid #dddddd;
+    margin-left: 80px;
+
+}
+.recommend {
+   padding-top: 15px;
+}
+.recommend .title{
+    font-size: 18px;
+    color:rgba(57,101,255,0.81);
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+.content-title{
+    margin: 10px 0;
+    box-sizing: content-box;
+}
+.content_item{
+    margin: 10px 0;
+    display: flex;
+    border-radius: 5px;
+}
+.content_item:hover{
+    background-color: rgba(136,136,136,0.16);
+}
+.content_item img{
+    height: 65px;
+    width: 90px;
+    border-radius: 5px;
+}
+.content_item .item_introduction{
+    margin: 0px 20px ;
+    padding: 10px 0 15px;
+    color: rgba(116,116,116,0.93);
+    font-size: 13px;
+    border-bottom: 1px solid #dddddd;
+}
+.item_introduction a{
+    text-decoration: none;
+    color: rgba(116,116,116,0.93);
+    display: block;
+    margin: 5px 0 10px;
+}
+.item_introduction p{
+    font-weight: bold;
+}

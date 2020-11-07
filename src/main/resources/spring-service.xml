@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 扫描service相关的bean -->
+    <context:component-scan base-package="com.ike.service" />
+
+    <!--*ServiceImpl注入到IOC容器中-->
+    <bean id="AdminServiceImpl" class="com.ike.service.AdminServiceImpl">
+        <property name="adminMapper" ref="adminMapper"/>
+    </bean>
+    <bean id="CommentServiceImpl" class="com.ike.service.CommentServiceImpl">
+        <property name="commentMapper" ref="commentMapper"/>
+    </bean>
+    <bean id="CourseServiceImpl" class="com.ike.service.CourseServiceImpl">
+        <property name="courseMapper" ref="courseMapper"/>
+    </bean>
+    <bean id="ExampleServiceImpl" class="com.ike.service.ExampleServiceImpl">
+        <property name="exampleMapper" ref="exampleMapper"/>
+    </bean>
+    <bean id="TeacherServiceImpl" class="com.ike.service.TeacherServiceImpl">
+        <property name="teacherMapper" ref="teacherMapper"/>
+    </bean>
+    <bean id="QaServiceImpl" class="com.ike.service.QaServiceImpl">
+        <property name="qaMapper" ref="qaMapper"/>
+    </bean>
+    <bean id="StudentServiceImpl" class="com.ike.service.StudentServiceImpl">
+        <property name="studentMapper" ref="studentMapper"/>
+    </bean>
+    <bean id="TestServiceImpl" class="com.ike.service.TestServiceImpl">
+        <property name="testMapper" ref="testMapper"/>
+    </bean>
+    <bean id="VideoServiceImpl" class="com.ike.service.VideoServiceImpl">
+        <property name="videoMapper" ref="videoMapper"/>
+    </bean>
+
+    <!-- 配置事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 注入数据库连接池 -->
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+</beans>

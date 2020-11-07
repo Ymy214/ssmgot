@@ -1,0 +1,31 @@
+
+{
+  "res": true,
+  "data": [
+    {
+      "userName": "张三",
+      "userCode": "0002391",
+      "depId": 26
+    },
+    {
+      "userName": "李三",
+      "userCode": "0002391",
+      "depId": 25
+    },
+    {
+      "userName": "张彬彬",
+      "userCode": "0002391",
+      "depId": 25
+    },
+    {
+      "userName": "刘禹锡",
+      "userCode": "0002391",
+      "depId": 26
+    },
+    {
+      "userName": "贺知章",
+      "userCode": "0002391",
+      "depId": 26
+    }
+  ]
+}

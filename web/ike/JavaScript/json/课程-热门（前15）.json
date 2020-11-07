@@ -1,0 +1,133 @@
+{
+  "msg": "成功",
+  "code": 0,
+  "data": [
+    {
+      "coursename": "Java全栈工程师",
+      "coursetype": "运维/测试",
+      "cover": "https://img03.sogoucdn.com/v2/thumb/crop/xy/ai/x/0/y/0/w/120/h/135/iw/90/ih/101.25/t/0/ir/3?t=2&appid=200997&url=https%3A%2F%2Fpic.baike.soso.com%2Fugc%2Fbaikepic2%2F12064%2F20170607155058-13638487.jpg%2F300&referer=http%3A%2F%2Fbaike.sogou.com%2Fv64335802.htm%3FfromTitle%3Djava%25E7%25A8%258B%25E5%25BA%258F%25E8%25AE%25BE%25E8%25AE%25A1&sign=1a3ba65a4583899066ea221bb924d4f7",
+      "id": 41449,
+      "intro": "技术与业务深度融合，电商项目前后端开发的教科书级别案例",
+      "isdeleted": 0,
+      "zan": 8567
+    },
+    {
+      "coursename": "心理学与生活",
+      "coursetype": "文史哲",
+      "cover": "https://img3.doubanio.com/view/subject/l/public/s1068520.jpg",
+      "id": 41327,
+      "intro": "有人的地方就有心理学，生活中处处都有心理学，所以心理学其实就是让你的生活得更精彩！让你真正懂得你的生活！这就是我们这门课——《心理学与生活》！",
+      "isdeleted": 0,
+      "zan": 55234
+    },
+    {
+      "coursename": "动力气象学",
+      "coursetype": "理工",
+      "cover": "http://img36.ddimg.cn/57/33/1104310506-1_u.jpg",
+      "id": 23,
+      "intro": "应用物理学定律研究大气运动的动力和热力过程，以及它们相互关系，从理论上探讨大气环流、天气系统和其他大气运动演变规律的学科",
+      "isdeleted": 0,
+      "zan": 53434
+    },
+    {
+      "coursename": "中国现代文学史",
+      "coursetype": "文学文化",
+      "cover": "http://www.kfzimg.com/G06/M00/5E/2C/p4YBAFqcoVmAGcj8AABTZswDkB0474_n.jpg",
+      "id": 41332,
+      "intro": "《中国现代文学史》是一门学习、研究“五四”以来中国现代文学发展历史的课程。课程教学目标是帮助、促进学生系统、准确地掌握“五四”文学革命以来的文学思潮、文学运动、文学批评和文学创作发展的基本概况",
+      "isdeleted": 0,
+      "zan": 53245
+    },
+    {
+      "coursename": "线性代数",
+      "coursetype": "理学",
+      "cover": "http://img3.jarhu.com/goodimages/201309/03/di1378185397352.jpg",
+      "id": 41355,
+      "intro": "“线性代数”是理工科大学生必修的数学基础课之一，也是硕士研究生入学全国统一考试中必考的数学课程之一。通过线性代数课程的学习，不仅可以掌握该课程的基础理论，更重要的是可以培养学生的空间直观和想象能力以及抽象思维和逻辑推理能力、为学习后续课程和进一步扩大实践能力打下必要的数学基础。",
+      "isdeleted": 0,
+      "zan": 52345
+    },
+    {
+      "coursename": "C++语言程序设计",
+      "coursetype": "计算机",
+      "cover": "https://i04piccdn.sogoucdn.com/95f16e08e680fb0f",
+      "id": 41395,
+      "intro": "本课程是C语言的进阶课程，将帮助C程序员实现：从C语言到C++语言的进阶；从结构化程序设计到面向对象程序设计的进阶。选修本课程需具备C语言基础，或已选修本课程的上半部分《C++语言程序设计（上）》（阚道宏）。",
+      "isdeleted": 0,
+      "zan": 52345
+    },
+    {
+      "coursename": "大学语文",
+      "coursetype": "文学文化",
+      "cover": "http://booklibimg.kfzimg.com/data/book_lib_img_v2/isbn/0/d32b/d32b6dd6d1b4f371a894d59354a156d9_0_0_0_0.jpg",
+      "id": 41382,
+      "intro": "文学能从更高的层次上提升人的文化修养，充实人的内心世界，焕发人的精神风貌，给人以真、善、美的享受。大学语文课程精心选择中国历代文史哲经典作品为教学内容，分析其思想情感、审美价值和文化意义，提升学生对中国语言文学的热爱之情，陶冶其精神情操，提高其文化素养，启发其寻找精神家园。",
+      "isdeleted": 0,
+      "zan": 45532
+    },
+    {
+      "coursename": "岩石学",
+      "coursetype": "理工",
+      "cover": "http://img3.jarhu.com/goodimages/201510/201/wj1445313490918.jpg",
+      "id": 11,
+      "intro": "是研究岩石的分布、产状、成分、结构、构造、分类、成因、演化等方面的科学",
+      "isdeleted": 0,
+      "zan": 44511
+    },
+    {
+      "coursename": "计算流体力学方法与应用",
+      "coursetype": "理工",
+      "cover": "https://pic.wenwen.soso.com/p/20101105/20101105075721-1540592169.jpg",
+      "id": 22,
+      "intro": "流体力学的一个分支，研究地球以及其他星体上的自然界流体的宏观运动，着重探讨其中大尺度运动的一般规律",
+      "isdeleted": 0,
+      "zan": 43545
+    },
+    {
+      "coursename": "公司理财",
+      "coursetype": "经济学",
+      "cover": "http://booklibimg.kfzimg.com/data/book_lib_img_v2/isbn/0/c139/c139ec2f4930bbbaf202a188dde6c3dc_0_0_0_0.jpg",
+      "id": 41390,
+      "intro": "这是一门关于企业价值管理、投资、融资、营运和分配的课程：一门能通过内部治理增加企业价值的“加法”课程；一门教会时间风险观和任何人都不能在任何时候欺骗任何人的理财观念的“减法”课程；一门能培养财经问题的敏锐度和关注度的“乘法”课程；一门能教会赚钱花钱，降低失望和不幸的“除法”课程。",
+      "isdeleted": 0,
+      "zan": 25346
+    },
+    {
+      "coursename": "大数据技术及应用教程",
+      "coursetype": "云计算/大数据",
+      "cover": "https://pic.baike.soso.com/ugc/baikepic2/29929/20180521235312-781923556_jpeg_732_1030_83040.jpg/0",
+      "id": 41447,
+      "intro": "课程结合案例驱动，全面讲解Spark SQL大数据离线理处理必备的知识点。在项目部分，使用Kudu整合Spark进行广告业务功能的实现，并针对已实现的需求代码进行调优；通过扩展Presto和大数据平台建设方面的相关内容，进一步提升技能。本课程干货丰富，是大数据开发者们加薪、跳槽、转型的必备利器。",
+      "isdeleted": 0,
+      "zan": 8567
+    },
+    {
+      "coursename": "软件测试之道",
+      "coursetype": "运维/测试",
+      "cover": "https://img04.sogoucdn.com/v2/thumb/retype/ext/auto?appid=10160002&url=http%3A%2F%2Fimg3m9.ddimg.cn%2F86%2F24%2F23347949-1_w_3.jpg",
+      "id": 41452,
+      "intro": "Nginx是Web开发不可或缺的一部分，作为享誉中外的高性能静态Web服务器和反向代理服务器，被各大一线互联网公司广泛应用。本课程绝非散列知识点的罗列，而是从基础应用到架构思维，从场景实践到性能优化，带你拥抱完备的Nginx生态。以反向代理和负载均衡这2种经典生产场景为蓝本，深入阐述，助你解决企业生产中的实际问题。无论你是开发工程师还是运维工程师，这门课都能帮你在短时间内精进Nginx，实实在在地提升竞争力，契合企业的人才痛点需求！",
+      "isdeleted": 0,
+      "zan": 8567
+    },
+    {
+      "coursename": "通信网络基础",
+      "coursetype": "工学",
+      "cover": "https://pic.baike.soso.com/ugc/baikepic2/13372/20160728195259-383716453.jpg/300",
+      "id": 41364,
+      "intro": "电话网、移动通信网、无线局域网......网络无处不在，语音通信、数据通信、视频通信......通信无时不有。然而，是什么使得通信网络世界七彩缤纷且井然有序呢？让我们从《通信网络基础》这门课程开启奇妙的通信网络技术之旅，从中找到答案吧！",
+      "isdeleted": 0,
+      "zan": 6437
+    },
+    {
+      "coursename": "国际金融管理",
+      "coursetype": "管理学",
+      "cover": "https://pic.baike.soso.com/ugc/baikepic2/11518/20200621002324-1895328880_jpeg_156_200_5650.jpg/0",
+      "id": 41362,
+      "intro": "幸福的家庭各个相似，不幸的家庭各有不幸，创业亦如此。依托高大上的科技发明，创业就一定靠谱吗？同学挚友，创业团队更加稳定高效吗？创业不能按图索骥，也没有必胜锦囊。但是科学的理论导引和案例的分析借鉴，会让你的创业试错成本低一些，成功的概率大一些。《走进创业》，让我们一起学习创业！",
+      "isdeleted": 0,
+      "zan": 6345
+    }
+  ],
+  "count": 286
+}

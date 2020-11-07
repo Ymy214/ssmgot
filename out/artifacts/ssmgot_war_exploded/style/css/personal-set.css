@@ -1,0 +1,223 @@
+.search-box{
+    padding-top: 8px;
+}
+.main{
+    margin-top: 40px;
+    padding: 30px 0;
+}
+.setting-left{
+    width: 216px;
+    background-color: #f8fafc;
+}
+.setting-left .person-pic{
+    margin: 0 auto;
+    text-align: center;
+}
+.setting-left .person-pic img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 4px solid #d9dde1;
+    border-radius: 50px;
+}
+.setting-left .desmode{
+    text-align: center;
+    font-size: 16px;
+}
+.desmode p{
+    line-height: 24px;
+    width: 160px;
+    margin: 8px auto 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.desmode span{
+    font-size: 12px;
+    color: #545c63;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+.list-wapper{
+    overflow: hidden;
+}
+.list-wapper h1{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 12px 24px;
+    font-weight: 700;
+    padding: 10px 0;
+    border-bottom: 1px solid #d9dde1;
+}
+.list-wapper .menu{
+    padding: 10px 0 25px;
+}
+.list-wapper .menu a.active{
+    color: #fff;
+    background-color: #f01414;
+}
+.list-wapper .menu a{
+    display: block;
+    position: relative;
+    padding: 0 0 0 54px;
+    height: 48px;
+    line-height: 48px;
+    transition: background-color .3s ease;
+}
+.list-wapper .menu a:hover{
+    color: #f01414;
+}
+.list-wapper .menu a.active:hover{
+    color: #fff;
+}
+.setting-right{
+    float: left;
+    margin-left: 48px;
+    width: 936px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.person-cont{
+    display: inline-block;
+    width:100%;
+}
+.person-cont h2{
+    width: 100%;
+    background-color:#f01414;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+.person-cont .person-piece{
+    margin: 20px 0;
+}
+.person-piece .piece-item{
+    margin-top: 20px;
+    position: relative;
+}
+/* @media(min-width:768px){
+    .tit{
+        width: 17%;
+    }
+} */
+.piece-item .tit {
+    position: absolute;
+    right: 800px;
+    font-size: 15px;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+}
+.piece-item .base-input {
+    margin-left:180px;
+    line-height: 34px;
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.base-input .upload {
+    position: relative;
+    width: 90px;
+}
+ .upload .upload-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.form-control{
+    display: block;
+    float: left;
+    /* width: 100%; */
+    height: 25px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.errorinput{
+    float: left;
+    height: 25px;
+    font-size: 12px;
+    color:red;
+    margin-left: 10px;
+}
+.btn {
+    width: 80px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 2px;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.address-cont .btn:first-of-type{
+    margin-left: 80px;
+}
+.person-cont .change-address {
+    overflow: hidden;
+    margin: 20px 0;
+}
+.change-address .address-tit {
+    margin: 0 10px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    background-color: #e8e8e8;
+}
+.address-tit li:first-child {
+    width: 60%;
+    border-right: 1px solid #d7d7d7;
+}
+.address-tit li:last-of-type{
+   margin-left: 150px;
+}
+.address-tit li {
+    float: left;
+    text-align: center;
+    color: #333;
+    line-height: 30px;
+    height: 30px;
+}
+.change-address .address-cont {
+    margin: 0 10px;
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+.address-cont li:first-child {
+    width: 60%;
+    border-right: 1px solid #d7d7d7;
+}
+.address-cont li {
+    float: left;
+    text-align: center;
+    color: #333;
+    padding: 10px 0;
+    background-color: #fff;
+    line-height: 40px;
+    height: 40px;
+}
+.address-cont .btn{
+    margin-right: 10px;
+}
+.footer{
+    width:100%;
+    position: absolute;
+    bottom: -200px;
+}

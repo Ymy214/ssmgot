@@ -1,0 +1,33 @@
+.footer{
+    height: 60px;
+    background:rgba(0,0,0,0.8);
+    padding: 20px 5px;
+}
+.footer-containter{
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.footer_link{
+    margin:20px 0 0;
+    width: 70%;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #c8cdd2;
+    margin:0px  20px 10px 0px;
+}
+.icontubiao{
+    position: absolute;
+    right: 0;
+    top: -8px;
+
+}
+.icontubiao .iconfont{
+    color:#c8cdd2 ;
+    font-size: 30px;
+    margin-right:20px ;
+}
+

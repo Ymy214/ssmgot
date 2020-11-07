@@ -1,0 +1,25 @@
+{
+  "msg": "成功",
+  "code": 0,
+  "data": [
+    {
+      "comment": "这门课太适合小白了",
+      "course_id": 1,
+      "id": 1341,
+      "student_id": 1
+    },
+    {
+      "comment": "我简直不能太喜欢了，老师讲的好，细致入微",
+      "course_id": 1,
+      "id": 1342,
+      "student_id": 3
+    },
+    {
+      "comment": "天哪我怎么没有早点发现这个课程和这个可爱的老师",
+      "course_id": 1,
+      "id": 1344,
+      "student_id": 3
+    }
+  ],
+  "count": 4
+}

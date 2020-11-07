@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./style/images/favicon.png">
+    <title>课程</title>
+    <link rel="stylesheet" href="style/css/common.css">
+    <link rel="stylesheet" href="lib/iconfont-course/iconfont.css">
+    <link rel="stylesheet" href="style/css/headerTop.css">
+    <link rel="stylesheet" href="style/css/footer.css">
+    <link rel="stylesheet" href="style/css/course.css">
+</head>
+<body>
+<div class="header"  >
+    <div class="container">
+        <!--            头部-->
+        <div class="header-left flt" >
+            <a href="index.html" class="header_a" id="1" onclick="test(1)">慕课网首页</a>
+            <a href="courses.html" class="header_a" id="2" onclick="test(2)">慕课课程</a>
+            <a href="specialColumn.html" class="header_a" id="3" onclick="test(3)">付费专栏</a>
+            <a href="apecourses.html" class="header_a" id="4" onclick="test(4)">猿课程</a>
+        </div>
+        <div class="header-right flr">
+            <a href="#" class="header_a"><i class="iconfont icon-lingdang"></i></a>
+            <a href="PersonalCenter.html" class="header_a">我的课程</a>
+        </div>
+        <!--            搜索-->
+        <div class="container">
+            <div class="search">
+                <span class="logo flt">慕课课程</span>
+                <input class="flr" type="text" placeholder="搜索感兴趣的课程">
+                <i class="iconfont icon-sousuo"></i>
+            </div>
+        </div>
+        <!--            导航-->
+        <div class="navigation" id="navigation">
+            <div class="direction">
+                <div class="content-title">
+                    <span >方向：</span>
+                </div>
+                <div class="content">
+                    <a href="allcourse.html" class="active content_a">全部</a>
+                </div>
+            </div>
+            <div id="type"  class="type">
+                <div class="content-title">
+                    <span>分类：</span>
+                </div>
+                <div class="content ">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  主体-->
+<div class="main">
+    <div class="container">
+        <div class="main-title" id="main-title">
+            <a href="#">课程</a>
+        </div>
+        <div class="course-list">
+<!--            <div class="course-item" id="course-item">-->
+<!--                <div class="course-item-container">-->
+<!--                    <img src="style/images/course2.jpg" height="202" width="360"/>-->
+<!--                    <p class="title">java入门第一课（IDEA工具）2020升级版</p>-->
+<!--                    <p class="content">基础萌新入门第一课，从Java环境搭建、工具使用、基础语法开始</p>-->
+<!--                    <div><span class="flr"><i class="iconfont icon-shoucang"></i>   收藏</span></div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+        <div class="pagination-nick" id="pagination">
+
+            <a class="banBtn pageItem" id="prevBtn">&lt;</a>
+            <a class="active pageItem" id="first">1</a>
+            <a href="#" class="pageItem">2</a>
+            <a href="#" class="pageItem">3</a>
+            <a href="#" class="pageItem">4</a>
+
+            <span class="over">...</span>
+
+            <a href="#" class="pageItem" id="last">10</a>
+            <a href="#" class="pageItem" id="nextBtn">&gt;</a>
+
+        </div>
+    </div>
+</div>
+<!--  尾部  -->
+<div class="footer">
+    <div class="footer-containter">
+        <div class="footer_link">
+            <a href="#">网站首页</a>
+            <a href="#">人才招聘</a>
+            <a href="#">企业服务</a>
+            <a href="#">联系我们</a>
+            <a href="#">讲师招募</a>
+            <a href="#">帮助中心</a>
+            <a href="#">意见反馈</a>
+            <a href="#">慕课大学</a>
+            <a href="#">友情链接</a>
+            <div class="icontubiao flr">
+                <i class="iconfont icon-weibo"></i>
+                <i class="iconfont icon-weixin"></i>
+                <i class="iconfont icon-qq"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="javascript/jquery-3.4.1.js"></script>
+<script>
+    //   页面跳转-->
+    $(function () {
+        $('#course-item').on('click',function () {
+            window.location.href='coursedetails.html'
+            // console.log("详情页面")
+        })
+    })
+
+    //改变标签背景
+    $(document).ready(function(){
+        $("#navigation a:first-of-type").addClass("as")
+        $("#navigation a").click(
+            function() {
+                $("#navigation a").removeClass()
+                $(this).addClass("as")
+            });
+    });
+
+    $.ajax({
+        url:'./JavaScript/json/allcourse.json',
+        type:'post',
+        success:function (data) {
+            var newData = JSON.parse(data).data
+            //课程、类型变成数组
+            var typearr = []
+            var namearr = []
+            $(newData).each(function (i,item) {
+                typearr.push(item.coursetype)
+                namearr.push(item.coursename)
+            })
+            //类型去重
+            var coursetype = Array.from(new Set(typearr))
+
+            $(coursetype).each(function (index,ele){
+                var nameArr = [];
+                if (index < 16){
+                    $(newData).each(function (a,b) {
+                        $('.content a:not(first)').click(function () {
+                            // var k = $(this).index()
+                            if(b.coursetype == ele){
+                                nameArr.push(b.coursename)
+                                console.log(nameArr)
+                            }
+                        })
+                    })
+                    // var courseName = '<a href="#" class="content_a">'+nameArr+'</a>'
+                    // $('.type .content').append(courseName)
+
+                    var directionName = '<a href="#" class="content_a">'+ele+'</a>'
+                    $('.direction .content').append(directionName)
+                }
+                function all() {
+                    $('.type .content').empty()
+
+                }
+            })
+            //获取课程名字
+            // $(namearr).each(function (x,item) {
+            //     console.log(item)
+            // })
+        },
+        error: function (a,b,c) { //请求失败的回调函数
+            console.log(b)
+        },
+        statusCode:{404:function () {
+                alert('page not found')
+            }}
+    })
+    $.ajax({
+        url: './JavaScript/json/课程-热门（前15）.json',
+        data:'json',
+        type: 'post',
+        success:function (data) {
+            var data = JSON.parse(data).data
+            $(data).each(function (i,item) {
+                var hotcourse = '<div class="course-item" id="course-item7">\n' +
+                    '                <div class="course-item-container">\n' +
+                    '                    <img src="'+item.cover+'" class="course-item-img"/>\n' +
+                    '                    <p class="title">'+item.coursename+'</p>\n' +
+                    '                    <p class="content">'+item.intro+'</p>\n' +
+                    '                    <div><span class="flr"><i class="iconfont icon-shoucang"></i>   收藏</span></div>\n' +
+                    '                </div>\n' +
+                    '            </div>'
+                $('.course-list').append(hotcourse)
+            })
+        },
+        error:function (a,b,c) {
+            console.log(b)
+        },
+        statusCode: {404:function () {
+                alert('page not found')
+            }}
+    })
+</script>
+
+</body>
+</html>

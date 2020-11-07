@@ -1,0 +1,255 @@
+/*头部*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-color:  #ffffff;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom-style: solid 1px ;
+    z-index: 10;
+    box-shadow: 0 2px 4px 0 rgba(28,31,33,.06);
+}
+.header-container{
+    width: 75%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+}
+.header-container a{
+    text-decoration: none;
+    color: #1c1f21;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.login{
+    flex: 1;
+}
+.login a{
+    text-decoration: none;
+    float: right;
+    font-weight: normal;
+    color: #545c63;
+}
+
+/* .menu{
+    height: 50px;
+    background: #e44849;
+    text-align: center;
+} */
+.menu a{
+    display: inline-block;
+    height: 100%;
+    line-height: 48px;
+    color: #fafffb;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+.menu a:hover{
+    background: url("../images/lineIndexMenu.jpg");
+    border-bottom: 1px solid #ffb401;
+}
+
+/*中间*/
+.main{
+    padding-top: 30px;
+}
+.main .container{
+    display: flex;
+}
+.main .apply-button{
+    text-align: center;
+}
+.main .personal-centre{
+    height: 400px;
+    width: 200px;
+    border:1px solid #dddddd;
+}
+.main .My-Question{
+    display: inline-block;
+    height: 500px;
+    /*flex: 1;*/
+    width: 700px;
+    border:1px solid #dddddd;
+    margin: 0 25px;
+}
+
+/*中间部分内容：个人中心分类*/
+.personal-centre .title{
+    height: 40px;
+    line-height: 40px;
+    background: #ffb401;
+    color: #fafffb;
+    position: relative;
+    padding-left:40px ;
+    font-size: 15px;
+}
+
+.personal-centre .item{
+    border-bottom:1px solid #dddddd;
+    padding: 15px 0;
+}
+.personal-centre .list{
+    padding: 15px 5px;
+}
+.apply-button input{
+    width: 150px;
+    height: 40px;
+    margin: 30px 0;
+    line-height: 32px;
+    padding: 0 15px;
+    color: white;
+    vertical-align: middle;
+    font-size: 14px;
+    clear: both;
+    background-color: #e44849;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+}
+.apply-button input:hover{
+    background: palevioletred;
+    /*设置鼠标在元素上的样式*/
+    cursor:pointer;
+}
+
+.sub{
+    margin-top: 5px;
+}
+.sub a{
+    font-size: 13px;
+    margin-right: 10px;
+}
+.item-title{
+    position: relative;
+}
+
+/*个人中心分类小图标*/
+.personal-centre .title .icon0{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icoIndex.png")  -45px -75px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+.personal-centre .icon1{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icoIndex.png")  -119px 2px;
+    margin: 0 10px;
+}
+.personal-centre .icon2{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icoIndex.png")  -119px -22px;
+
+    margin: 0 10px;
+}
+.personal-centre .icon3{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icoIndex.png")  -119px -46px;
+
+    margin: 0 10px;
+}
+.personal-centre .icon4{
+     display: inline-block;
+     vertical-align: middle;
+     margin: 0 10px;
+     width: 20px;
+     height: 20px;
+     background: url("../images/icoIndex.png")  -117px -75px;
+
+ }
+.personal-centre .icon5{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icoIndex.png")  -117px -100px;
+
+    margin: 0 10px;
+}
+
+
+/*我的提问*/
+.My-Question .list{
+    padding:5px;
+}
+.My-Question .myquestion{
+    margin: 0 auto;
+    width: 650px;
+    padding: 15px 0;
+    border-bottom:1px solid #dddddd ;
+    font-size: 15px;
+    font-weight: bold;
+}
+.My-Question .item{
+    padding: 15px 0;
+    margin: 0 auto;
+    width: 650px;
+    border-bottom:1px solid #dddddd ;
+    border-bottom-style: dashed;
+}
+.My-Question .question{
+    /*margin:15px 0 0 0;*/
+
+    display: inline-block;
+    color: #2d64b3;
+    font-size: 15px;
+}
+.My-Question .page a{
+    border: 1px solid #ddd;
+    padding: 5px;
+    color: cornflowerblue;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.page a:hover{
+    background: #2d64b3;
+}
+.page{
+    float: right;
+    margin: 20px;
+    color: cornflowerblue;
+}
+.question .phone{
+    vertical-align: middle;
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background: url("../images/icoIndex.png") 3px -170px;
+}
+.question .iconnew{
+    margin: 0 5px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url("../images/xinpin.png");
+    width: 16px;
+    height: 16px;
+}
+.My-Question .right{
+    display: inline-block;
+    font-size: 13px;
+    color: #ddd;
+}
+.right .anwser{
+    margin-right: 60px;
+}

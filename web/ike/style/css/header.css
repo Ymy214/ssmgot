@@ -1,0 +1,149 @@
+.header{
+    width: 100%;
+    height: 40px;
+    background: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    /*display: block;*/
+    /*overflow: hidden;*/
+}
+.common-nav-search{
+    position: absolute;
+    right: 15px;
+    bottom: 3px;
+}
+.container{
+    margin: 0 auto;
+    width: 1400px;
+}
+.header-left ul li {
+    font-size: 14px;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+.header ul li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #717A84;
+    font-weight: bold;
+    position: relative;
+}
+.header ul li a:hover{
+    color: white;
+}
+.header i{
+    font-size: 16px;
+    color:#717A84;
+}
+.header i:hover{
+    color: white;
+}
+.search-box{
+    float: left;
+    position: relative;
+    margin-right: 36px;
+    /* padding-top: 8px; */
+}
+.search-box input{
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #fff;
+    background: none;
+    border-radius: 20px;
+    padding-left: 12px;
+    font-size: 14px;
+}
+.search-box .search-hide{
+    padding: 0;
+    margin-right: 0;
+    width: 240px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    z-index: 10;
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,0.2);
+    display: none;
+}
+.search-hide .hot{
+    padding: 12px 0 8px 12px;
+    box-sizing: border-box;
+}
+.search-hide h3{
+    font-size: 12px;
+    color: #1C1F21;
+    line-height: 12px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.search-hide .hot-item{
+    background: rgba(84,92,99,0.1);
+    border-radius: 12px;
+    padding: 4px 12px;
+    line-height: 16px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    color: #545C63;
+}
+.history-search{
+    border-top: 1px solid rgba(28,31,33,0.1);
+    padding: 12px 0 0;
+    box-sizing: border-box;
+    display: block;
+}
+.history-search h3 .history-clear{
+    font-size: 12px;
+    color: #9199A1;
+    line-height: 12px;
+    float: right;
+    margin-right: 12px;
+    font-weight: normal;
+}
+.history-search .history-box .history-item{
+    display: block;
+    padding: 0 12px;
+    box-sizing: border-box;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 12px;
+    color: #545C63;
+}
+.login-area{
+    float: left;
+    position: relative;
+}
+.login-area .logined{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.login-area .logined .user-mycourse-box a{
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+}
+.user-card-box a img{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.header-link{
+    margin-right: 65px;
+}

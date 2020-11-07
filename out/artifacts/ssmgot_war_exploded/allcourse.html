@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/css/common.css">
+    <link rel="stylesheet" href="style/css/footer.css">
+    <link rel="stylesheet" href="style/css/headerTop.css">
+    <link rel="stylesheet" href="lib/iconfont-course/iconfont.css">
+    <link rel="stylesheet" href="style/css/allcourse.css">
+    <link rel="shortcut icon" href="./style/image/LOGO.jpg">
+    <title>全部课程</title>
+</head>
+<body>
+    <!--    头部-->
+    <div class="header" id="header" >
+        <div class="container">
+            <!--            头部-->
+            <div class="header-left flt" >
+                <a href="index.html" class="header_a" id="1" onclick="test(1)">首页</a>
+                <a href="apecourses.html" class="header_a">猿课程</a>
+                <a href="allcourse.html" class="header_a">全部课程</a>
+                <a href="specialColumn.html" class="header_a">付费专栏</a>
+                <a href="question-answer.html" class="header_a">ike知道</a>
+                <a href="PersonalCenter.html" class="header_a">我的课程</a>
+            </div>
+            <div class="header-right flr">
+                <a href="#" class="header_a"><i class="iconfont icon-lingdang"></i></a>
+                <a href="PersonalCenter.html" class="header_a">我的课程</a>
+            </div>
+        </div>
+    </div>
+    <!--  主体  -->
+    <div class="main">
+        <div class="p-title"><p class="title">全部课程</p></div>
+        <div class="course-list">
+<!--            <div class="box box1">-->
+<!--                <div class="course-item">-->
+<!--                    <ul class="courseul">-->
+<!--                        <li class="courseName">-->
+<!--                            <a href="#" class="coursetype">我的<span>:</span></a>-->
+<!--                            <a href="#" class="coursename">数学</a>-->
+<!--                            <a href="#" class="coursename">数学</a>-->
+<!--                            <a href="#" class="coursename">数学</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <!--  尾部  -->
+    <div class="footer">
+        <div class="footer-containter">
+            <div class="footer_link">
+                <a href="#">网站首页</a>
+                <a href="#">人才招聘</a>
+                <a href="#">企业服务</a>
+                <a href="#">联系我们</a>
+                <a href="#">讲师招募</a>
+                <a href="#">帮助中心</a>
+                <a href="#">意见反馈</a>
+                <a href="#">慕课大学</a>
+                <a href="#">友情链接</a>
+            </div>
+            <div class="icontubiao">
+                <i class="iconfont icon-weibo"></i>
+                <i class="iconfont icon-weixin"></i>
+                <i class="iconfont icon-qq"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./JavaScript/jquery-3.4.1.js"></script>
+    <script>
+        $.ajax({
+            url: './JavaScript/json/allcourse.json',
+            type:'get',
+            data:'json',
+            success:function (data) {
+                var arr = []
+                var newData =JSON.parse(data).data
+                $(newData).each(function (i,item) {
+                    // var directionName = '<a href="#" class="coursetype">'+item.coursetype+'</a>'
+                    // $('.courseName').append(directionName)
+                    arr.push(item.coursetype)
+                })
+
+                 var coursetype = Array.from(new Set(arr))
+               $(coursetype).each(function (index,ele){
+                   var nameArr = [];
+                   $(newData).each(function (a,b) {
+                        if(b.coursetype == ele){
+                            nameArr.push(b.coursename)
+                        }
+                   })
+                   var directionName = '<div class="box box1">\n' +
+                       '                <div class="course-item">\n' +
+                       '                    <ul class="courseul">\n' +
+                       '                        <li class="courseName">\n' +
+                       '                            <a href="#" class="coursetype">'+ele+'<span>:</span></a>\n'
+                   var tempStr = ''
+                   $(nameArr).each(function (i,item) {
+                        tempStr+='<a href="coursedetails.html" class="coursename" >'+item+'</a> '
+                   })
+                   var str3 = '                 </li>\n' +
+                       '                    </ul>\n' +
+                       '                </div>\n' +
+                       '            </div>'
+
+                   $('.course-list').append(directionName+tempStr+str3)
+               })
+            },
+            error: function (a,b,c) { //请求失败的回调函数
+                console.log(b)
+            },
+            statusCode:{404:function () {
+                    alert('page not found')
+                }}
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+.search-box{
+    padding-top: 8px;
+}
+.main{
+    margin-top: 40px;
+}
+.user-mycourse-box{
+    padding-left: 20px;
+}
+.user-card-box a img{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.user-all{
+    height: 148px;
+    background: #112543;
+}
+.user-info {
+    /*display: flex;*/
+    display: block;
+    position: relative;
+}
+.user-container{
+    box-sizing: border-box;
+    width: 1400px;
+    margin: 0 auto;
+}
+.user-info .user-pic img{
+    width: 148px;
+    height: 148px;
+    float: left;
+    border-radius: 50%;
+    margin-right:50px ;
+}
+.user-info-right{
+    float: left;
+    width: 980px;
+}
+.user-info-name{
+    font-weight: 600;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+    line-height: 28px;
+    margin-top: 48px;
+}
+.about-info{
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 6px;
+}
+.study-info{
+    position: absolute;
+    top: 80px;
+    right:280px;
+    min-width: 200px;
+    text-align: right;
+}
+.study-info .study-item{
+    color: white;
+    line-height: 48px;
+    vertical-align: middle;
+    height: 48px;
+    float: left;
+    margin-right: 24px;
+}
+.study-item em{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(255,255,255,.8);
+    line-height: 28px;
+}
+.study-item span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+    line-height: 20px;
+    margin-top: 4px;
+}
+.set-btn{
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 18px;
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+    line-height: 20px;
+    height: 20px;
+    margin-right: 50px;
+}
+.wrap{
+    position: relative;
+    display: block;
+}
+.wrap .slider{
+    position: absolute;
+    left: 24px;
+    top: 0px;
+}
+.slider ul li:first-child{
+    margin-top: 40px;
+}
+.slider ul li{
+    margin: 0 auto;
+    width: 160px;
+    height: 48px;
+}
+.slider ul a{
+    position: relative;
+    display: block;
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #787d82;
+    text-align: center;
+}
+.slider ul li a.active{
+    color: #fff;
+    background: rgba(240,20,20,.8);
+    border-radius: 8px;
+}
+.u-container{
+    /*border: 1px solid red;*/
+    margin-left: 240px;
+    min-height: 589px;
+    width: 1000px;
+    height: 600px;
+}
+.container-tab{
+    font-size: 16px;
+    color: #545c63;
+    height: 52px;
+    line-height: 52px;
+    margin-top: 18px;
+    border-bottom: 1px solid #d9dde1;
+}
+.tab-left a{
+    margin-right: 64px;
+    display: inline-block;
+    /* float: left; */
+}
+.tab-left a.active{
+    color: #f20d0d;
+    border-bottom: 2px solid #f20d0d;
+}
+.all-course-main{
+    margin-top: 28px;
+}
+.all-course-content{
+    width: 100%;
+    box-sizing: border-box;
+}
+.courseitem{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.courseitem:first-child{
+    margin-top: 0;
+}
+.courseitem .img-box{
+    width: 200px;
+    margin-right: 30px;
+}
+.courseitem .course-list{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #d9dde1;
+    position: relative;
+    padding-bottom: 28px;
+    width: 730px;
+}
+.course-list .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.course-list .title span{
+    background: #f5f7fa;
+    border-radius: 2px;
+    width: 62px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #9199a1;
+    font-weight: 400;
+    margin-right: 12px;
+}
+.course-list  .title a{
+    font-size: 20px;
+    color: #07111b;
+    font-weight: 700;
+    line-height: 36px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*对象内文本溢出时显示省略标记*/
+}
+.study-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.study-part span{
+    line-height: 24px;
+    font-size: 14px;
+    color: #4d555d;
+    margin-right: 24px;
+}
+.study-part span.i-left{
+    color: #f20d0d;
+}
+.points{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.points span{
+    font-size: 14px;
+    line-height: 36px;
+    color: #4d555d;
+    margin-right: 36px;
+}
+.points .continue-btn{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    width: 104px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: rgba(240,20,20,.6);
+    border-radius: 18px;
+}
+.recomment-body{
+    width: 100%;
+    margin-top: 48px;
+    padding-bottom: 40px;
+}
+.recomment-body h2{
+    font-size: 16px;
+    color: #1c1f21;
+    line-height: 18px;
+}
+.recomment-body ul{
+    clear: both;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.recomment-body li{
+    width: 216px;
+    margin-bottom: 8px;
+    margin-left: 30px;
+}
+.recomment-body li:first-child{
+    margin-left: 0;
+}
+.recomment-body li img{
+    width: 216px;
+    height: 120px;
+    border: 0;
+    border-radius: 8px;
+}
+.recomment-body ul li .content{
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+.recomment-body ul li .content .title{
+    margin-top: 0;
+    font-size: 16px;
+    color: #1c1f21;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 4px;
+    max-height: 44px;
+    overflow: hidden;
+}
+.recomment-body ul li .r-content {
+    font-size: 12px;
+    color: #545c63;
+    text-align: left;
+    line-height: 18px;
+}
+.recomment-body ul li .r-content span{
+    margin-right: 12px;
+}
+.footer{
+    background: #1c1f21;
+    text-align: center;
+    border-top: 1px solid #e2e4e6;
+    font-size: 12px;
+    color: #787d82;
+    padding: 20px 0;
+    min-width: 620px;
+}

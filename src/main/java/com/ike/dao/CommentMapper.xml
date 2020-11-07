@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ike.dao.CommentMapper">
+    <select id="getCommentForCourse" resultType="com" parameterType="int">
+        select stu.nickname, com.* from student stu, `comment` com where com.student_id = stu.id and com.course_id = #{cou_id}
+    </select>
+
+    <select id="getCommentFromCourse" resultType="com" parameterType="int">
+        select * from `comment` com where com.student_id =#{stu_id}
+    </select>
+
+    <select id="getAllComments" resultType="com">
+        select * from comment
+    </select>
+
+    <select id="getAllComments1" resultType="com">
+        select * from comment limit #{start},#{limit}
+    </select>
+
+    <select id="count" resultType="int">
+        select count(id) from comment
+    </select>
+
+</mapper>

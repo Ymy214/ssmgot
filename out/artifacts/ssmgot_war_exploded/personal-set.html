@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>慕课网-个人设置</title>
+	<link rel="stylesheet" href="style/css/personal-set.css">
+	<link rel="stylesheet" href="style/css/reset.css">
+	<link rel="stylesheet" href="style/css/common.css">
+	<link rel="stylesheet" href="style/css/header.css">
+	<link rel="stylesheet" href="style/css/footer.css">
+	<link rel="stylesheet" href="lib/iconfont-course/iconfont.css">
+	<link rel="stylesheet" href="lib/iconfont/iconfont.css">
+</head>
+
+<body>
+	<div class="header">
+		<div class="container .clearfix">
+			<div class="header-left left">
+				<ul>
+					<li><a href="index.html">慕课网首页</a></li>
+					<li><a href="apecourses.html">猿课程</a></li>
+					<li><a href="courses.html">分类课程</a></li>
+					<li><a href="specialColumn.html">付费专栏</a></li>
+					<li><a href="question-answer.html">ike知道</a></li>
+					<li><a href="PersonalCenter.html">我的课程</a></li>
+				</ul>
+			</div>
+			<div class="header-link right">
+				<div class="search-box">
+					<input type="text" class="nav-input" placeholder="请输入你想搜索的内容">
+					<a href="#" class="common-nav-search" target="_blank"><i class="iconfont icon-search"></i></a>
+					<div class="search-hide">
+						<div class="hot">
+							<h3>热搜</h3>
+							<div class="hot-box">
+								<a href="#" class="hot-item">Vue</a>
+								<a href="#" class="hot-item">Python</a>
+								<a href="#" class="hot-item">Java</a>
+								<a href="#" class="hot-item">Vue</a>
+								<a href="#" class="hot-item">Vue</a>
+								<a href="#" class="hot-item">Vue</a>
+								<a href="#" class="hot-item">Vue</a>
+								<a href="#" class="hot-item">Vue</a>
+							</div>
+						</div>
+						<div class="history-search">
+							<h3>
+								"最近搜索"
+								<a href="#" class="history-clear">清空</a>
+							</h3>
+							<div class="history-box">
+								<a href="#" class="history-item">Vue</a>
+								<a href="#" class="history-item">Vue</a>
+								<a href="#" class="history-item">Vue</a>
+								<a href="#" class="history-item">Vue</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="login-area">
+					<ul class="logined">
+						<li class="user-mycourse-box">
+							<a href="#"><span>我的课程</span></a>
+						</li>
+						<li class="user-card-box">
+							<a href="#">
+								<img src="style/images/icon1.jpg" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div class="setting-wrap .clearfix">
+				<div class="setting-left left">
+					<div class="person-pic">
+						<img src="style/images/icon1.jpg" />
+					</div>
+					<div class="desmode">
+						<p>用户名</p>
+						<span>ID：7591909</span>
+					</div>
+					<div class="list-wapper">
+						<h1>账户管理</h1>
+						<ul class="menu">
+							<li>
+								<a href="#" class="active">基本信息</a>
+								<span class="arr"><i></i></span>
+							</li>
+							<li>
+								<a href="#">详细信息</a>
+								<span class="arr"><i></i></span>
+							</li>
+							<li>
+								<a href="#">修改密码</a>
+								<span class="arr"><i></i></span>
+							</li>
+							<li>
+								<a href="#">投诉建议</a>
+								<span class="arr"><i></i></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="setting-right">
+					<div class="person-cont">
+						<h2>基本信息</h2>
+						<ul class="person-piece">
+							<li class="piece-item">
+								<span class="tit">头像</span>
+								<div class="base-input">
+									<div class="upload">
+										<input type="file" class="upload-input">
+										<button type="submit" class="btn" onclick="addImage()">上传图片</button>
+									</div>
+								</div>
+							</li>
+							<li class="piece-item">
+								<span class="tit">用户名</span>
+								<div class="base-input">
+									<input type="text" id="username" class="form-control" value="" placeholder="请输入用户名" name="userName"
+										onblur="JudgeUserName()">
+									<span class="errorinput" data-errortips="用户名不能为空" data-errortips-num="用户名为5-10个字符"
+										id="error_name"></span>
+								</div>
+							</li>
+							<li class="piece-item">
+								<span class="tit">联系方式</span>
+								<div class="base-input">
+									<input type="number" class="form-control" id="telphone" value="" placeholder="例：13003805112" name="tel"
+										onblur="JudgeTel()">
+									<span class="errorinput" data-errortips="联系方式不能为空" data-errortips-num="联系方式为11位"
+										id="error_contact"></span>
+								</div>
+							</li>
+							<li class="piece-item">
+								<span class="tit">邮箱</span>
+								<div class="upload base-input">
+									<input type="text" class="form-control" id="email" value="" placeholder="请填写邮箱" name="email"
+										onblur="JudgeEmail()">
+									<span class="errorinput" data-errortips="邮箱不能为空" id="error_email" data-errortips-num="邮箱格式错误"></span>
+								</div>
+							</li>
+							<li class="piece-item">
+								<span class="tit">地址</span>
+								<div class="base-input">
+									<input type="text" class="form-control" id="address" value="" placeholder="请填写地址" name="address"
+										onblur="JudgeAddress()">
+									<span class="errorinput" data-errortips="地址不能为空" id="error_address"></span>
+								</div>
+							</li>
+							<li class="piece-item">
+								<span class="tit">性别</span>
+								<div class="base-input">
+									<input type="radio" name="sex" value="1">
+									<label for="1">男</label>
+									<input type="radio" name="sex" value="2">
+									<label for="2">女</label>
+								</div>
+							</li>
+							<li class="piece-item">
+								<div class="upload base-input">
+									<button class="btn">保存资料</button>
+								</div>
+							</li>
+						</ul>
+						<h2>我的地址</h2>
+						<div class="change-address">
+							<ul class="address-tit">
+								<li>详细地址</li>
+								<li>操作</li>
+							</ul>
+							<ul class="address-cont">
+								<li>
+									<span>山东省青岛市城阳区<i>（默认）</i></span>
+								</li>
+								<li>
+									<button class="btn">修改</button>
+									<button class="btn">删除</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+        <div class="footer-containter">
+            <div class="footer_link">
+                <a href="#">网站首页</a>
+                <a href="#">人才招聘</a>
+                <a href="#">企业服务</a>
+                <a href="#">联系我们</a>
+                <a href="#">讲师招募</a>
+                <a href="#">帮助中心</a>
+                <a href="#">意见反馈</a>
+                <a href="#">慕课大学</a>
+                <a href="#">友情链接</a>
+            </div>
+            <div class="icontubiao">
+                <i class="iconfont icon-weibo"></i>
+                <i class="iconfont icon-weixin"></i>
+                <i class="iconfont icon-qq"></i>
+            </div>
+        </div>
+    </div>
+	<script src="./js/personal-set.js">
+	</script>
+</body>
+
+</html>

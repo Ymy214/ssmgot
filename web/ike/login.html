@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-6">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱课网-登录</title>
+    <link rel="shortcut icon" href="./style/image/LOGO.jpg">
+    <link rel="stylesheet" href="style/css/reset.css">
+    <link rel="stylesheet" href="style/css/login.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2059149_ededvkqmeq7.css">
+</head>
+<body>
+    <div class="con">
+    <div class="main">
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+        <div class="login-wrapper">
+            <div class="login-head">
+                <p>
+                    <span class="login active" id="login">登录</span>
+                    <span class="student-register" id="student-register">学生注册</span>
+                    <span class="teacher-register" id="teacher-register">教师注册</span>
+                </p>
+            </div>
+            <div class="phonelogin" id="phonelogin">
+                <div class="login-wrap">
+                    <form method="GET" action="#"  id="login" >
+                        <div class="login-item">
+                            <input type="number" class="ipt" id="login_ipt" onblur="blurJudgeTel(event)" placeholder="请输入手机号" name="tel">
+                            <p class="errorlogin red" id="error_login_ipt" data-errortips="请输入正确的手机号"></p>
+                        </div>
+                        <div class="login-item">
+                            <input type="password" class="ipt" id="login_pwd" onblur="blurJudgePwd(event)" placeholder="请输入密码" name="password">
+                            <i class="iconfont icon-yanjing1 eye"></i>
+                            <p class="errorpwd red" id="error_login_pwd" data-errortips="密码不能为空" data-errortips-num = "密码为6-16位任意数"></p>
+                        </div>
+                        <div class="login-item clearfix login-tips">
+                            <label class="left">
+                                <input type="checkbox">7天内自动登录
+                            </label>
+                            <a href="#" class="right">找回密码</a>
+                            <a href="#" class="right">|</a>
+                            <a href="#" class="right">无法登录</a>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="登录" onclick="Judge()">
+                        </div>
+                    </form>
+                </div>
+                <div class="login-foot">
+                    <!-- <div class="login-sns clearfix">
+                        <span class="sns left">手机短信登录</span>
+                        <i class="iconfont right icon-qq"></i>
+                        <i class="iconfont right icon-weixin-01"></i>
+                        <i class="iconfont right icon-weibo"></i>
+                    </div> -->
+                    <div class="privacy">
+                        登录即同意爱课网<a href="">《隐私政策》</a>
+                    </div>
+                </div>
+            </div>
+            <div class="student-register-area hidden" id="student-register-area">
+                <div class="login-wrap">
+                    <form method="GET" action="#"id="student_regist">
+                        <div class="login-item">
+                            <input type="number" class="ipt" placeholder="请输入手机号" onblur="blurJudgeStudentTel(event)" id = "student_tel" name="studentTel">
+                            <p class="errorlogin red" data-errortips="请输入正确的手机格式" id="error_student_ipt"></p>
+                        </div>
+                        <div class="login-item">
+                            <input type="password" class="ipt" placeholder="请输入密码" onblur="blurJudgeStudentFPwd(event)" id = "student_f_pwd" name = "studentFPwd">
+                            <i class="iconfont icon-yanjing1 eye"></i>
+                            <p class="errorlogin red" data-errortips="密码不能为空" data-errortips-num = "密码为6-16位任意数" id="error_student_f_pwd"></p>
+                        </div>
+                        <div class="login-item clearfix login-tips">
+                            <input type="password" class="ipt" placeholder="请再次输入密码" onblur="blurJudgeStudentSPwd(event)" id="student_s_pwd" name = "studentSPwd">
+                            <i class="iconfont icon-yanjing1 eye"></i>
+                            <p class="errorpwd red" data-errortips="密码不能为空" data-errortips-num1 = "两次密码输入不一致" id="error_student_s_pwd"></p>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="注册">
+                        </div>
+                        <div class="privacy">
+                            <label>
+                                <input type="checkbox">同意
+                                <a href="">《爱课网注册协议》</a>&
+                                <a href="">《隐私政策》</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="login-sns clearfix">
+                        <span class="sns left">手机短信登录</span>
+                        <i class="iconfont right icon-qq"></i>
+                        <i class="iconfont right icon-weixin-01"></i>
+                        <i class="iconfont right icon-weibo"></i>
+                    </div> -->
+            </div>
+            <div class="teacher-register-area hidden" id="teacher-register-area">
+                <div class="login-wrap">
+                    <form action="#" method="GET" id="teacher_regist">
+                        <div class="login-item">
+                            <input type="number" class="ipt" placeholder="请输入手机号" onblur="blurJudgeTeacherTel(event)" id = "teacher_tel" name="teacherTel">
+                            <p class="errorlogin red" data-errortips="请输入正确的手机格式" id="error_teacher_ipt"></p>
+                        </div>
+                        <div class="login-item">
+                            <input type="password" class="ipt" placeholder="请输入密码" onblur="blurJudgeTeacherFPwd(event)" id = "teacher_f_pwd" name = "teacherFPwd">
+                            <i class="iconfont icon-yanjing1 eye"></i>
+                            <p class="errorlogin red" data-errortips="密码不能为空" data-errortips-num = "密码为6-16位任意数" id="error_teacher_f_pwd"></p>
+                        </div>
+                        <div class="login-item clearfix login-tips">
+                            <input type="password" class="ipt" placeholder="请再次输入密码" onblur="blurJudgeTeacherSPwd(event)" id="teacher_s_pwd" name = "teacherSPwd">
+                            <i class="iconfont icon-yanjing1 eye"></i>
+                            <p class="errorpwd red" data-errortips="密码不能为空" data-errortips-num1 = "两次密码输入不一致" id="error_teacher_s_pwd"></p>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="注册">
+                        </div>
+                        <div class="privacy">
+                            <label>
+                                <input type="checkbox">同意
+                                <a href="">《爱课网注册协议》</a>&
+                                <a href="">《隐私政策》</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="login-sns clearfix">
+                            <span class="sns left">手机短信登录</span>
+                            <i class="iconfont right icon-qq"></i>
+                            <i class="iconfont right icon-weixin-01"></i>
+                            <i class="iconfont right icon-weibo"></i>
+                        </div> -->
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

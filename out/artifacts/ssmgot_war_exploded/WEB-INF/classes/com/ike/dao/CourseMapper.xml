@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ike.dao.CourseMapper">
+    <select id="count" resultType="int">
+        select count(id) num from course
+    </select>
+
+    <select id="getAllCourses1" resultType="cou">
+        select * from course limit #{start},#{limit}
+    </select>
+
+    <select id="getCourseByType" resultType="cou">
+        select * from course where coursetype like #{type}
+    </select>
+
+    <select id="getAllCourses" resultType="cou">
+        select * from course
+    </select>
+
+    <select id="getHotCourses" parameterType="int" resultType="cou">
+        select * from course ORDER BY zan desc limit #{num}
+    </select>
+
+    <select id="getNewCourses" parameterType="int" resultType="cou">
+        select * from course ORDER BY id desc limit #{num}
+    </select>
+
+    <select id="SearchCourses" resultType="cou">
+        select * from course where coursename like #{key1} or coursetype like #{key2}
+    </select>
+
+    <select id="getMyCourse" parameterType="int" resultType="cou">
+        select * from course where id in (select course_id from cou_stu where student_id=#{stu_id})
+    </select>
+
+    <select id="getMyTeaches" parameterType="int" resultType="cou">
+        select * from course where id in (select course_id from cou_tes where teacher_id=#{tea_id})
+    </select>
+
+    <update id="doZanCourse" parameterType="int">
+        UPDATE course SET zan = zan + 1 WHERE id = #{cou_id}
+    </update>
+
+    <update id="setCover">
+        UPDATE `moocdb`.`course` SET `cover` = #{cover} WHERE `id` = #{id}
+    </update>
+
+</mapper>

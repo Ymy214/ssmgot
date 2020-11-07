@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 别名 -->
+    <typeAliases>
+        <!--
+        <package name="com.ike.pojo"/>
+        -->
+        <typeAlias type="com.ike.pojo.Student" alias="stu"/>
+        <typeAlias type="com.ike.pojo.Teacher" alias="tea"/>
+        <typeAlias type="com.ike.pojo.Admin" alias="adm"/>
+        <typeAlias type="com.ike.pojo.Comment" alias="com"/>
+        <typeAlias type="com.ike.pojo.Course" alias="cou"/>
+        <typeAlias type="com.ike.pojo.Example" alias="eg"/>
+        <typeAlias type="com.ike.pojo.Test" alias="test"/>
+        <typeAlias type="com.ike.pojo.Qa" alias="qa"/>
+        <typeAlias type="com.ike.pojo.Video" alias="vid"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="com/ike/dao/StudentMapper.xml"/>
+        <mapper resource="com/ike/dao/TeacherMapper.xml"/>
+        <mapper resource="com/ike/dao/AdminMapper.xml"/>
+        <mapper resource="com/ike/dao/TestMapper.xml"/>
+        <mapper resource="com/ike/dao/QaMapper.xml"/>
+        <mapper resource="com/ike/dao/VideoMapper.xml"/>
+        <mapper resource="com/ike/dao/CourseMapper.xml"/>
+        <mapper resource="com/ike/dao/CommentMapper.xml"/>
+        <mapper resource="com/ike/dao/ExampleMapper.xml"/>
+    </mappers>
+
+    <!-- 映射文件 -->
+
+
+
+
+</configuration>

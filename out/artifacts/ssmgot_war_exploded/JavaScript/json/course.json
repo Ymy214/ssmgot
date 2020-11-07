@@ -1,0 +1,182 @@
+{
+  "res": true,
+  "data": {
+    "direction": [
+      {
+        "id": 0,
+        "name": "全部",
+        "celected": true
+      },
+      {
+        "id": 1,
+        "spell": "jisuanji",
+        "name": "计算机",
+        "celected": false,
+        "coursetypes": [
+          {
+            "id": 100,
+            "spell": "qianyanjishu",
+            "name": "前沿技术"
+          },
+          {
+            "id": 101,
+            "spell": "ruanjiangongcheng",
+            "name": "软件工程"
+          },
+          {
+            "id": 102,
+            "spell": "shujujiegou",
+            "name": "数据结构"
+          },
+          {
+            "id": 103,
+            "spell": "jisuanjiwangluo",
+            "name": "计算机网络"
+          },
+          {
+            "id": 104,
+            "spell": "androidkaifa",
+            "name": "Android开发"
+          }]
+      },
+      {
+        "id":2,
+        "spell": "waiyu",
+        "name": "外语",
+        "celected": false,
+        "coursetypes": [
+          {
+            "id": 200,
+            "spell": "tingli",
+            "name": "听力"
+          },
+          {
+            "id": 201,
+            "spell": "kouyu",
+            "name": "口语"
+          },
+          {
+            "id": 202,
+            "spell": "xiezuo",
+            "name": "写作"
+          },
+          {
+            "id": 203,
+            "spell": "fanyi",
+            "name": "翻译"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "spell": "lixue",
+        "name": "理学",
+        "celected": false,
+        "coursetypes": [
+          {
+            "id": 300,
+            "spell": "shuxue",
+            "name": "数学"
+          },
+          {
+            "id": 301,
+            "spell": "wuli",
+            "name": "物理"
+          },
+          {
+            "id": 302,
+            "spell": "huaxue",
+            "name": "化学"
+          },
+          {
+            "id": 303,
+            "spell": "tianwen",
+            "name": "天文"
+          },
+          {
+            "id": 304,
+            "spell": "xianxingdaishu",
+            "name": "线性代数"
+          }]
+      },
+      {
+        "id": 4,
+        "spell": "gongxue",
+        "name": "工学",
+        "celected": false,
+        "coursetypes": [
+          {
+            "id": 400,
+            "spell": "gongchenglixue",
+            "name": "工程力学"
+          },
+          {
+            "id": 401,
+            "spell": "cailiao",
+            "name": "材料"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "spell": "jingjiguanli",
+        "name": "经济管理",
+        "celected": false
+      },
+      {
+        "id": 6,
+        "spell": "xinxixue",
+        "name": "心理学",
+        "celected": false
+      },
+      {
+        "id": 7,
+        "spell": "wenzheshi",
+        "name": "文哲史",
+        "celected": false
+      },
+      {
+        "id": 8,
+        "spell": "yiyaoweisheng",
+        "name": "医药卫生",
+        "celected": false
+      },
+      {
+        "id": 9,
+        "spell": "",
+        "name": "教育教学",
+        "celected": false
+      },
+      {
+        "id": 10,
+        "spell": "gongxue",
+        "name": "法学",
+        "celected": false
+      },
+      {
+        "id": 11,
+        "spell": "gongxue",
+        "name": "农林园艺",
+        "celected": false
+      },
+      {
+        "id": 12,
+        "spell": "yinxueyuwudao",
+        "name": "音乐与舞蹈",
+        "celected": false
+      },
+      {
+        "id": 13,
+        "spell": "kaozhengjiuye",
+        "name": "考证就业",
+        "celected": false
+      },
+      {
+        "id": 14,
+        "spell": "mingshizhuanlan",
+        "name": "名师专栏",
+        "celected": false
+      }
+    ]
+  }
+}

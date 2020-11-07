@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ike.dao.StudentMapper">
+
+    <select id="count" resultType="int">
+        select count(id) num from student
+    </select>
+    <select id="getAllStudents" resultType="stu">
+        select * from student
+    </select>
+
+    <select id="getAllStudents1" resultType="stu">
+        select * from student limit #{start},#{limit}
+    </select>
+
+    <select id="LoginCheck1" resultType="stu">
+        select * from student where tel=#{tel} and password=#{pwd}
+    </select>
+
+    <select id="LoginCheck2" resultType="stu">
+        select * from student where id=#{id} and password=#{pwd}
+    </select>
+
+    <insert id="PickCourse">
+        INSERT INTO `moocdb`.`cou_stu`(`course_id`, `student_id`) VALUES (#{cou}, #{stu})
+    </insert>
+
+    <update id="setIcon">
+        UPDATE `moocdb`.`student` SET `icon` = #{icon} WHERE `id` = #{id}
+    </update>
+
+    <update id="update">
+        UPDATE `moocdb`.`student` SET `tel` = #{tel}, `password` = #{password}, `nickname` = #{nickname}, `name` = #{name}, `email` = #{email} WHERE `id` = #{id}
+    </update>
+
+    <insert id="signUp">
+        INSERT INTO `moocdb`.`student`(`tel`, `name`, `sex`, `email`) VALUES (#{tel}, #{name}, #{sex}, #{email})
+    </insert>
+
+
+    <!--<insert id="addStudent" parameterType="stu">
+        insert into student (id, studentID, name) values (#{id},#{studentID},#{name})
+    </insert>
+
+    <delete id="deleteStudent" parameterType="stu">
+        delete from student where id = #{id}
+    </delete>
+
+    <select id="getStudent" parameterType="int" resultType="stu">
+        select * from student where id= #{id}
+    </select>
+
+    <update id="updateStudent" parameterType="stu">
+        update student set name = #{name} where id = #{id}
+    </update>-->
+
+</mapper>

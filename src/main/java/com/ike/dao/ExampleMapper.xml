@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ike.dao.ExampleMapper">
+
+    <select id="getAllExamples" resultType="eg">
+        select * from example
+    </select>
+
+    <select id="getAllExamples1" resultType="eg">
+        select * from example limit #{start},#{limit}
+    </select>
+
+    <select id="count" resultType="int">
+        select count(id) num from example
+    </select>
+
+</mapper>

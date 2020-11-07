@@ -1,0 +1,22 @@
+/*头部*/
+.header{
+    height: 40px;
+    background: black;
+    line-height: 40px;
+}
+.header .header_a{
+    color: rgb(255,255,255);
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 14px;
+}
+.header .container a:first-of-type{
+    margin-left:  0;
+}
+.header .container a:last-of-type{
+    margin-right:  0;
+}
+.header-left a:hover,
+.header-right a:hover{
+    color: white;
+}
